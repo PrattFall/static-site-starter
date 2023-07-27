@@ -1,0 +1,33 @@
+@import "./_variables";
+@import "./_lib";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  @mixin square 100%;
+  margin: 0;
+  padding: 0;
+}
+
+:--heading {
+  line-height: var(--header-line-height);
+  margin: var(--header-margin);
+  font-family: var(--header-font-family);
+  font-weight: var(--header-font-weight);
+}
+
+
+@for $i from 1 to 4 {
+  h$(i) {
+    @mixin apply-font-ratio (4 - $i);
+  }
+}
+
+p, li {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  font-weight: var(--body-font-weight);
+}

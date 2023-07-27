@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title }} | {{ site.name }}</title>
+  <link rel="stylesheet" type="text/css" href="/assets/styles/site.css" />
+</head>
+
+<body>
+  <div class="site">
+    {% include "partials/site_head.html" %}
+    <main tabindex="-1" id="main-content">
+      {% block content %}
+      <h1>Something went wrong. No content found.</h1>
+      {% endblock %}
+    </main>
+  </div>
+</body>
+
+</html>

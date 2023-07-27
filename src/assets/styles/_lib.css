@@ -1,0 +1,19 @@
+@define-mixin box $width, $height {
+  width: $width;
+  height: $height;
+}
+
+@define-mixin square $size {
+  @mixin box $size, $size;
+}
+
+@define-mixin delist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@define-mixin apply-font-ratio $value {
+  font-size: calc(var(--body-font-size) * max($value * var(--font-size-ratio), 1));
+}
+

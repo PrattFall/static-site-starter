@@ -1,0 +1,16 @@
+@import "../_lib";
+
+.site-header {
+  max-width: 800px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  gap: space(2);
+
+  .brand {
+    @mixin apply-font-ratio 2;
+    font-family: var(--body-font-family);
+    font-weight: var(--header-font-weight);
+  }
+}
+

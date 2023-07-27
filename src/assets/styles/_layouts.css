@@ -1,0 +1,6 @@
+@import "./_variables";
+@import "./_base";
+
+.site-head {
+  background-color: #eee;
+}

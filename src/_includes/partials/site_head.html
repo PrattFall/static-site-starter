@@ -1,0 +1,12 @@
+<header role="banner" class="site-header">
+  <a href="/" aria-label="{{ site.name }}" class="brand">{{ site.name }}</a>
+  <nav role="navigation" aria-label="Primary" class="main-nav">
+    <ul class="nav-list">
+      {% for item in navigation.items %}
+      <li>
+        <a href="{{ item.url }}">{{ item.text }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,26 @@
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+@custom-media --phone screen and (min-width: 640px);
+@custom-media --small screen and (min-width: 800px);
+@custom-media --medium screen and (min-width: 1000px);
+@custom-media --large screen and (min-width: 1400px);
+
+@define-space 10px;
+
+:root {
+  --header-line-height: 1.2;
+  --header-margin: space(2) 0 0;
+  --header-font-family: Poppins, sans-serif;
+  --header-font-weight: 800;
+
+  --body-line-height: 1.5;
+  --body-font-size: 16px;
+  --body-font-family: Poppins, sans-serif;
+  --body-font-weight: 500;
+
+  --ratio-golden-approx: 1.618;
+  --ratio-augmented-fourth: 1.414;
+
+  --font-size-ratio: var(--ratio-augmented-fourth);
+}
+
